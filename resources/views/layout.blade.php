@@ -7,39 +7,39 @@
 
     <body class="bg-gradient-to-bl from-gradient-dark-blue to-gradient-light-blue w-full min-h-screen bg-no-repeat">
         <!-- NAVBAR --> 
-        <nav class="sticky top-0 z-50 p-6 bg-white flex justify-between mb-8 border-b-4 border-gray-200">
+        <nav class="sticky top-0 z-50 p-6 bg-white flex justify-between mb-8 border-b-2 border-gray-200 opacity-75">
             
-            <ul class="flex items-center">
+            <ul class="flex items-center divide-x-2">
                 
-                <li>
+                <li class="transform hover:scale-110">
                     <a href="" class="p-6">Home</a>
                 </li>
                 
-                <li>
+                <li class="transform hover:scale-110">
                     <a href="" class="p-6">Dashboard</a>
                 </li>
                 
-                <li>
+                <li class="transform hover:scale-110">
                     <a href="" class="p-6">Posts</a>
                 </li>
 
             </ul>
 
-            <ul class="flex items-center">
+            <ul class="flex items-center divide-x-2">
                 
-                <li>
+                <li class="transform hover:scale-110">
                     <a href="" class="p-6">Username</a>
                 </li>
                 
-                <li>
+                <li class="transform hover:scale-110">
                     <a href="" class="p-6">Login</a>
                 </li>
                 
-                <li>
+                <li class="transform hover:scale-110">
                     <a href="" class="p-6">Register</a>
                 </li>
 
-                <li>
+                <li class="transform hover:scale-110">
                     <a href="" class="p-6">Logout</a>
                 </li>
 
