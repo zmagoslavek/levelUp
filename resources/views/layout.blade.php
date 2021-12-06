@@ -5,9 +5,9 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
 
-    <body class="bg-pink-200">
-        <!-- NAVBAR -->
-        <nav class="p-6 m-6 rounded-md bg-white flex justify-between">
+    <body class="bg-gradient-to-bl from-gradient-dark-blue to-gradient-light-blue w-full min-h-screen bg-no-repeat">
+        <!-- NAVBAR --> 
+        <nav class="sticky top-0 z-50 p-6 bg-white flex justify-between mb-8 border-b-4 border-gray-200">
             
             <ul class="flex items-center">
                 
