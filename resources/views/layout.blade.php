@@ -7,19 +7,19 @@
 
     <body class="bg-gradient-to-bl from-gradient-dark-blue to-gradient-light-blue w-full min-h-screen bg-no-repeat">
         <!-- NAVBAR --> 
-        <nav class="sticky top-0 z-50 p-6 bg-white flex justify-between mb-8 border-b-2 border-gray-200 opacity-75">
+        <nav class="sticky top-0 z-50 p-6 bg-white flex justify-between mb-8 bg-opacity-40">
             
             <ul class="flex items-center divide-x-2">
                 
-                <li class="transform hover:scale-110">
+                <li class="transition duration-300 ease-in-out transform hover:scale-125 hover:">
                     <a href="" class="p-6">Home</a>
                 </li>
                 
-                <li class="transform hover:scale-110">
+                <li class="transition duration-300 ease-in-out transform hover:scale-125 hover:opacity-100">
                     <a href="" class="p-6">Dashboard</a>
                 </li>
                 
-                <li class="transform hover:scale-110">
+                <li class="transition duration-300 ease-in-out transform hover:scale-125 hover:opacity-100">
                     <a href="" class="p-6">Posts</a>
                 </li>
 
@@ -27,19 +27,19 @@
 
             <ul class="flex items-center divide-x-2">
                 
-                <li class="transform hover:scale-110">
+                <li class="transition duration-300 ease-in-out transform hover:scale-125">
                     <a href="" class="p-6">Username</a>
                 </li>
                 
-                <li class="transform hover:scale-110">
+                <li class="transition duration-300 ease-in-out transform hover:scale-125">
                     <a href="" class="p-6">Login</a>
                 </li>
                 
-                <li class="transform hover:scale-110">
+                <li class="transition duration-300 ease-in-out transform hover:scale-125">
                     <a href="" class="p-6">Register</a>
                 </li>
 
-                <li class="transform hover:scale-110">
+                <li class="transition duration-300 ease-in-out transform hover:scale-125">
                     <a href="" class="p-6">Logout</a>
                 </li>
 
