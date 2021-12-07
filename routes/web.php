@@ -16,6 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/register',[RegisterController::class,'index'])->name('register');
 Route::post('/register',[RegisterController::class,'store']);
 
+
+Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
+
+
+
+
+
+
 Route::get('/', function () {
     return view('Auth.userlogin');
 });

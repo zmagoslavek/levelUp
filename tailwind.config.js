@@ -205,7 +205,11 @@ module.exports = {
     extend:{
       colors:{
         "gradient-dark-blue":"#30cfd0",
-        "gradient-light-blue":"#330867"
+        "gradient-light-blue":"#330867",
+        "gradient-black" :"#16222A",
+        "gradient-mirage":"#3A6073",
+        "gradient-red":"#ff3771",
+        "gradient-blue":"#3e6cff"
       }
     },
     fill: { current: 'currentColor' },

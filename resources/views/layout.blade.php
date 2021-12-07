@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
 
-    <body class="container mx-auto bg-gradient-to-bl from-gradient-dark-blue to-gradient-light-blue w-full min-h-screen bg-no-repeat">
+    <body class="container mx-auto bg-gradient-to-tr from-gradient-red to-gradient-blue w-full min-h-screen bg-no-repeat">
         <!-- NAVBAR --> 
         <nav class="sticky top-0 z-50 p-6 bg-white flex justify-between mb-8 bg-opacity-40 rounded-b-lg">
             
