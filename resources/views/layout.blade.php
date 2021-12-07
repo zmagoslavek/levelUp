@@ -5,9 +5,9 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
 
-    <body class="bg-gradient-to-bl from-gradient-dark-blue to-gradient-light-blue w-full min-h-screen bg-no-repeat">
+    <body class="container mx-auto bg-gradient-to-bl from-gradient-dark-blue to-gradient-light-blue w-full min-h-screen bg-no-repeat">
         <!-- NAVBAR --> 
-        <nav class="sticky top-0 z-50 p-6 bg-white flex justify-between mb-8 bg-opacity-40">
+        <nav class="sticky top-0 z-50 p-6 bg-white flex justify-between mb-8 bg-opacity-40 rounded-b-lg">
             
             <ul class="flex items-center divide-x-2">
                 
@@ -36,7 +36,7 @@
                 </li>
                 
                 <li class="transition duration-300 ease-in-out transform hover:scale-125">
-                    <a href="" class="p-6">Register</a>
+                    <a href="{{route('register')}}" class="p-6">Register</a>
                 </li>
 
                 <li class="transition duration-300 ease-in-out transform hover:scale-125">
