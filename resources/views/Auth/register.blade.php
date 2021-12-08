@@ -14,7 +14,7 @@
 
             <p class="text-center text-2xl font-medium  font-serif">Register</p>
 
-            <div class="m-6">
+            <div class="m-6 transition duration-300 ease-in-out transform hover:scale-110">
                 <label for="name" class="sr-only">Name</label></h1>
                 <input class="border-b-2 p-3 @error('name') border-red-500 @enderror" type="text" name="name" id="name" placeholder="Enter your name" value="{{old('name')}}">
 
@@ -28,7 +28,7 @@
 
             </div>
 
-            <div class="m-6">
+            <div class="m-6 transition duration-300 ease-in-out transform hover:scale-110">
                 <label for="username" class="sr-only">Username</label>
                 <input class="border-b-2 p-3 @error('username') border-red-500 @enderror" type="text" name="username" id="username" placeholder="Enter your username" value="{{old('username')}}">
                 
@@ -42,7 +42,7 @@
 
             </div> 
 
-            <div class="m-6">
+            <div class="m-6 transition duration-300 ease-in-out transform hover:scale-110">
                 <label for="email" class="sr-only">Email</label>
                 <input class="border-b-2 p-3 @error('email') border-red-500 @enderror" type="email" name="email" id="email" placeholder="Enter your email" value="{{old('email')}}">
 
@@ -56,7 +56,7 @@
 
             </div> 
 
-            <div class="m-6">
+            <div class="m-6 transition duration-300 ease-in-out transform hover:scale-110">
                 <label for="password" class="sr-only">Password</label>
                 <input class="border-b-2 p-3 @error('password') border-red-500 @enderror" type="password" name="password" id="password" placeholder="Choose a passsword" value="{{old('password')}}">
 
@@ -70,7 +70,7 @@
 
             </div> 
 
-            <div class="m-6">
+            <div class="m-6 transition duration-300 ease-in-out transform hover:scale-110">
                 <label for="password_confirmation" class="sr-only">Repeat your password</label>
                 <input class="border-b-2 p-3 @error('password_confirmation') border-red-500 @enderror" type="password" name="password_confirmation" id="password_confirmation" placeholder="Repeat your password" value="{{old('password')}}">
                 
