@@ -16,7 +16,7 @@
                 </li>
                 
                 <li class="transition duration-300 ease-in-out transform hover:scale-125 hover:opacity-100">
-                    <a href="" class="p-6">Dashboard</a>
+                    <a href="{{route('profile')}}" class="p-6">Profile</a>
                 </li>
                 
                 <li class="transition duration-300 ease-in-out transform hover:scale-125 hover:opacity-100">
@@ -27,21 +27,29 @@
 
             <ul class="flex items-center divide-x-2">
                 
+                @auth
                 <li class="transition duration-300 ease-in-out transform hover:scale-125">
                     <a href="" class="p-6">Username</a>
                 </li>
-                
+
                 <li class="transition duration-300 ease-in-out transform hover:scale-125">
-                    <a href="" class="p-6">Login</a>
+                    <form class="inline p-6" action="{{route('logout')}}" method="post">
+                        @csrf
+                        <button type="submit">Logout</button>
+                    </form>
+                </li>
+                @endauth
+                
+                @guest
+                <li class="transition duration-300 ease-in-out transform hover:scale-125">
+                    <a href="{{route('login')}}" class="p-6">Login</a>  
                 </li>
                 
                 <li class="transition duration-300 ease-in-out transform hover:scale-125">
                     <a href="{{route('register')}}" class="p-6">Register</a>
                 </li>
-
-                <li class="transition duration-300 ease-in-out transform hover:scale-125">
-                    <a href="" class="p-6">Logout</a>
-                </li>
+                @endguest
+                
 
             </ul>
         

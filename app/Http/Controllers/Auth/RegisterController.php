@@ -12,7 +12,9 @@ class RegisterController extends Controller
     public function index(){
         return view('Auth.register');
     }
+    
     public function store(Request $request){
+        
         $this->validate($request, [
             
             'name' => 'required|max:255',
@@ -31,7 +33,9 @@ class RegisterController extends Controller
 
         //sign in
 
-        return redirect()->route('dashboard');
+        auth()->attempt($request->only('email','password'));
+
+        return redirect()->route('profile');
 
     }
 }
