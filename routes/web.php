@@ -5,6 +5,8 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\User\ProfileController;
 use App\Http\Controllers\Auth\RegisterController;
+use GuzzleHttp\Middleware;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,22 +20,27 @@ use App\Http\Controllers\Auth\RegisterController;
 
 //Register
 
-Route::get('/register',[RegisterController::class,'index'])->name('register');
+Route::get('/register',[RegisterController::class,'index'])
+    ->name('register')
+    ->middleware('guest');
 Route::post('/register',[RegisterController::class,'store']);
 
 //Dashboard
 
-Route::get('/profile',[ProfileController::class,'index'])->name('profile');
-
+Route::get('/profile',[ProfileController::class,'index'])
+    ->name('profile');
 //Login
-
-Route::get('/login',[LoginController::class,'index'])->name('login');
+Route::get('/login',[LoginController::class,'index'])
+    ->name('login')
+    ->middleware('guest');
 Route::post('/login',[LoginController::class,'store']);
 
 //Logout
 
-Route::post('/logout',[LogoutController::class,'store'])->name('logout');
+Route::post('/logout',[LogoutController::class,'store'])
+    ->name('logout')
+    ->middleware('auth');
 
 Route::get('/', function () {
-    return view('Auth.login');
-});
+    return view('home');
+})->name('home');

@@ -45,7 +45,14 @@
 
             </div> 
 
-            <div class="m-6 p-3">
+            <div class="ml-8 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-3">
+                <div class="flex items-center">
+                    <input type="checkbox" name="remember" id="remember" class="mr-2">
+                    <label for="remember" class="text-sm">Remember me</label>
+                </div>
+            </div>
+
+            <div class="m-6 mt-2 p-3">
                 <button type="submit" class="bg-gradient-light-blue text-white px-4 py-3 rounded w-full transform transition duration-300 ease-in-out hover:scale-105">Login</button>
             </div> 
         

@@ -3,6 +3,7 @@
     <head>
         <!--BOOTSTRAP-->
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    @yield('scripts')
     </head>
 
     <body class="container mx-auto bg-gradient-to-tr from-gradient-red to-gradient-blue w-full min-h-screen bg-no-repeat">
@@ -12,7 +13,7 @@
             <ul class="flex items-center divide-x-2">
                 
                 <li class="transition duration-300 ease-in-out transform hover:scale-125 hover:">
-                    <a href="" class="p-6">Home</a>
+                    <a href="{{ route('home') }}" class="p-6">Home</a>
                 </li>
                 
                 <li class="transition duration-300 ease-in-out transform hover:scale-125 hover:opacity-100">
@@ -29,7 +30,7 @@
                 
                 @auth
                 <li class="transition duration-300 ease-in-out transform hover:scale-125">
-                    <a href="" class="p-6">Username</a>
+                    <a href="" class="p-6">{{auth()->user()->username}}</a>
                 </li>
 
                 <li class="transition duration-300 ease-in-out transform hover:scale-125">
